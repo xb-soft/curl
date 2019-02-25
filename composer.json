@@ -1,0 +1,17 @@
+{
+    "name": "xbsoft/curl",
+    "description": "The package of xbsoft what use libcurl.",
+    "type": "stable",
+    "require": {
+        "xbsoft/base": "^1.0",
+        "xbsoft/rpclog": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "enze.wei",
+            "email": "enzewei@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
