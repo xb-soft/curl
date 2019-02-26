@@ -5,6 +5,8 @@
  */
 namespace xb\curl;
 
+use xb\rpclog\RpcLog;
+use xb\rpclog\Config as RpcLogEnvConfig;
 /**
  * cURL抽象类
  *
@@ -41,7 +43,7 @@ abstract class AbstractCurl {
 			$startTime = RpcLog::getMicroTime();
 			$endTime = RpcLog::getMicroTime();
 			RpcLog::log("[\033[31;6mERROR\033[0m] please install package of lib curl", $startTime, $endTime, RpcLogEnvConfig::RPC_LOG_TYPE_CURL);
-			throw new SystemException('please install package of lib curl');
+			throw new \Exception('please install package of lib curl');
 		}
 		$this->_ch = curl_init();
 	}
